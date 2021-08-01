@@ -1,0 +1,11 @@
+{
+    "app": {
+        "p1": "Ejercicio Fizz Buzz",
+        "p3": "Revisa el código aquí: ",
+        "p4": "Fizz Buzz en Codepen.io",
+        "p5": "Proyectos interesantes: ",
+        "p6": "Blog para empezar a programar sin importar la edad...",
+        "p7": "Practica un poco tus habilidades con el piano, y escucha la grabación...",
+        "p8": "Manejo de estado entre componentes, modificación de SVG y más..."
+    }
+}

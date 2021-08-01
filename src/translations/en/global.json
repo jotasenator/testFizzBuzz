@@ -1,0 +1,11 @@
+{
+    "app": {
+        "p1": "Fizz Buzz Challenge",
+        "p3": "Check the code here: ",
+        "p4": "Fizz Buzz at Codepen.io ",
+        "p5": "Cool projects:",
+        "p6": "Blog for those who want to start coding, no mather age...",
+        "p7": "Test your skills with the piano and listen to the recording...  ",
+        "p8": "State handling between components, SVG modification and more ..."
+    }
+}

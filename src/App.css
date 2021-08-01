@@ -1,0 +1,100 @@
+body{
+  background-color: white; 
+}
+.App{
+  align-items: center;
+  background-color: cadetblue;
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+}
+/* initial animation */
+.custom-animation{
+  position: relative;
+}
+.custom-animation::before,
+ .custom-animation::after{
+  bottom:0;
+  content:'';
+  left:0;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+.custom-animation::before{
+  animation:presentation 4s steps(19) forwards;
+  background:cadetblue;
+}
+.custom-animation::after{
+  animation:presentation 4s steps(19) forwards, blink 500ms steps(19) infinite;
+  background: black;
+  width:0.125em;
+}
+@keyframes presentation {
+  to{
+    left:100%
+  }
+}
+@keyframes blink {
+  to{
+    background: transparent;
+  }
+}
+/* answer fading animation */
+.answer{
+  animation:fadingAnswer 2s ease calc(2s + 2s)forwards;
+  opacity:0;
+  transform:translateY(3rem);
+}
+@keyframes fadingAnswer {
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+/* slider */
+.sliderSize {  
+  height: 450px; 
+  width: 50%;  
+}
+.App,.sliderSize{
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+}
+.insidePic {    
+  color:white;
+  height: 387px;  
+  text-align: left;
+}
+/* links */
+a{
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  text-decoration: none;
+  padding-left: 5px;  
+}
+/* buttons */
+button{
+  background-color:darkcyan;
+  border: 5px;
+  color: white;
+  cursor: pointer; 
+  font: bold; 
+  font-size: 16px;
+  margin: 6px 4px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+
+button:hover {
+  background-color: grey;
+  color: whitesmoke;
+  
+}
