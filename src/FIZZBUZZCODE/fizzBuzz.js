@@ -12,5 +12,4 @@ export const fizzBuzz = (i) => {
         }
     }
 
-
 }
