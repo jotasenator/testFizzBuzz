@@ -6,6 +6,8 @@
         "p5": "Cool projects:",
         "p6": "Blog for those who want to start coding, no mather age...",
         "p7": "Test your skills with the piano and listen to the recording...  ",
-        "p8": "State handling between components, SVG modification and more ..."
+        "p8": "State handling between components, SVG modification and more ...",
+        "p9": "not Fizz nor Buzz or FizzBuzz",
+        "p10": "number not in range"
     }
 }

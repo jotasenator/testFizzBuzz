@@ -6,6 +6,8 @@
         "p5": "Proyectos interesantes: ",
         "p6": "Blog para empezar a programar sin importar la edad...",
         "p7": "Practica un poco tus habilidades con el piano, y escucha la grabación...",
-        "p8": "Manejo de estado entre componentes, modificación de SVG y más..."
+        "p8": "Manejo de estado entre componentes, modificación de SVG y más...",
+        "p9": "no es Fizz ni Buzz o FizzBuzz",
+        "p10": "número fuera de rango"
     }
 }

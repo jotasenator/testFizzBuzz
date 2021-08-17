@@ -8,8 +8,10 @@ export const fizzBuzz = (i) => {
         } else if (i % 5 === 0) {
             return 'Buzz'
         } else {
-            return 'not Fizz nor Buzz or FizzBuzz'
+            return '!== Fizz, Buzz, FizzBuzz'
         }
+    } else {
+        return '>=0 || >100'
     }
 
 }

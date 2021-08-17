@@ -91,10 +91,27 @@ button{
   text-decoration: none;
   transition-duration: 0.4s;
 }
-
-
 button:hover {
   background-color: grey;
   color: whitesmoke;
+}
+/* input */
+input{
+  height:20px;
+  padding:2px;
+  width:50px;
   
+}
+
+/* fizzbuzz and input*/
+.fizzBuzz{
+  width:200px;
+  padding-left: 10px;
+}
+
+/* fizzBuzz */
+.input-fizzBuzz{
+  display: flex;
+  align-items: center;
+  color:white;  
 }
