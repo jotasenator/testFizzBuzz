@@ -95,6 +95,11 @@ button:hover {
   background-color: grey;
   color: whitesmoke;
 }
+.style{
+  transform: scale(1.1);
+  color: darkcyan;
+  background-color: white;
+}
 /* input */
 input{
   height:20px;

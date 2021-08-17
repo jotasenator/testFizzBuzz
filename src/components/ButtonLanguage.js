@@ -5,43 +5,28 @@ export default function ButtonLanguage() {
     const { i18n } = useTranslation('global');
     const [selected, setSelected] = useState(true)
 
-    const styleValue = {
-        transform: 'scale(1.1)',
-        color: 'darkcyan',
-        backgroundColor: 'white'
-    }
-
-    const styleEs = () => {
+    const handleClickEn = () => {
         if (!selected) {
-            return styleValue
+            i18n.changeLanguage('en')
+            setSelected(true)
         }
     }
-    const styleEn = () => {
+    const handleClickEs = () => {
+
         if (selected) {
-            return styleValue
+            i18n.changeLanguage('es')
+            setSelected(false)
         }
-    }
-
-    const clickEs = () => {
-        i18n.changeLanguage('es')
-        setSelected(false)
-    }
-
-    const clickEn = () => {
-        i18n.changeLanguage('en')
-        setSelected(true)
     }
 
     return (
         <div>
             <button
-                style={styleEs()}
-                className='es'
-                onClick={clickEs}>Español</button>
+                className={!selected && 'style'}
+                onClick={handleClickEs}>Español</button>
             <button
-                style={styleEn()}
-                className='en'
-                onClick={clickEn}>English</button>
+                className={selected && 'style'}
+                onClick={handleClickEn}>English</button>
 
         </div>
     )
