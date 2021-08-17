@@ -3,8 +3,6 @@ import { fizzBuzz } from '../utils/fizzBuzz'
 
 export default function FizzBuzz({ i }) {
 
-
-
     return (
         <div className='fizzBuzz'>
             {

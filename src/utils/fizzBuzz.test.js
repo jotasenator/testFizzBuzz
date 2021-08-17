@@ -1,8 +1,5 @@
 
-
 import { fizzBuzz } from './fizzBuzz'
-
-
 
 describe('FIZZBUZZ test', () => {
     it('with i*3', () => {
