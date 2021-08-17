@@ -1,35 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import FizzBuzz from './FizzBuzz'
+import { useForm } from './hooks/useForm'
 
 
 export default function InputFizzBuzzNumber() {
 
-    const [formState, setFormState] = useState({ numero: 1 })
+    const [formState, handleInputChange] = useForm({
+        'numero': 1
+    })
 
     const { numero } = formState
-
-    useEffect(() => {
-
-    }, [formState])
-
-    const handleInputChange = (e) => {
-        setFormState({
-            ...formState,
-            [e.target.name]: e.target.value
-        })
-    }
 
     return (
         <div className='input-fizzBuzz'>
             <input
-                type='number'
                 name='numero'
-                value={numero}
-                autoComplete='off'
                 onChange={handleInputChange}
+                type='number'
+                value={numero}
             />
 
-            <FizzBuzz i={formState.numero} />
+            <FizzBuzz i={numero} />
         </div>
     )
 }
