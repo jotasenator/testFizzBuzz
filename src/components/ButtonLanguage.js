@@ -22,16 +22,26 @@ export default function ButtonLanguage() {
         }
     }
 
+    const clickEs = () => {
+        i18n.changeLanguage('es')
+        setSelected(false)
+    }
+
+    const clickEn = () => {
+        i18n.changeLanguage('en')
+        setSelected(true)
+    }
+
     return (
         <div>
             <button
                 style={styleEs()}
                 className='es'
-                onClick={() => { i18n.changeLanguage('es'); setSelected(false) }}>Español</button>
+                onClick={clickEs}>Español</button>
             <button
                 style={styleEn()}
                 className='en'
-                onClick={() => { i18n.changeLanguage('en'); setSelected(true) }}>English</button>
+                onClick={clickEn}>English</button>
 
         </div>
     )
