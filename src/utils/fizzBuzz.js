@@ -13,7 +13,7 @@ export const fizzBuzz = (i) => {
             return '!== Fizz, Buzz, FizzBuzz'
         }
     } else {
-        return '>=0 || >100'
+        return '<=0 || >100'
     }
 
 }
