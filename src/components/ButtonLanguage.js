@@ -22,10 +22,10 @@ export default function ButtonLanguage() {
     return (
         <div>
             <button
-                className={!selected && 'style'}
+                className={!selected ? 'style' : undefined}
                 onClick={handleClickEs}>Español</button>
             <button
-                className={selected && 'style'}
+                className={selected ? 'style' : undefined}
                 onClick={handleClickEn}>English</button>
 
         </div>
